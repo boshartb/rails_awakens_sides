@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+get 'darksides/textcrawl' => "darksides#textcrawl"
  root 'home#index'
  resources :darksides
  resources :lightsides
+
 
   # get 'darksides' => 'darksides#index'
   # get 'darksides/:id' => 'darksides#show', as: 'darkside'

@@ -6,9 +6,9 @@
     <title></title>
   </head>
   <body>
-
-
-    <h5>THE DARKSIDE</h5>
+    <h1>FORCE AWAKENS</h1>  
+  <img src="http://pre07.deviantart.net/b0b4/th/pre/f/2015/343/9/9/star_wars_kylo_banner__hi_res_textless_wallpaper__by_lightsabered-d9jg0ph.jpg" style="width:100%;">
+  <h1>THE DARKSIDE</h1>
     <% @darksides.each do |darkside| %>
      <%= link_to image_tag(darkside.url), "/darksides/#{darkside.id}" %>
       <p><%= darkside.name %></p>
@@ -16,7 +16,8 @@
 
     <%= link_to "ADD THE DARKSIDE", "/lightsides/new" %>
 </br>
-    <%= link_to "HOME ", "/home/index" %>
+</br>
+    <%= link_to "HOME ", "/" %>
 
 
   </body>

@@ -1,2 +1,9 @@
-<p><%= darkside.name %></p>
-<img src="<%= @darkside.url %>">
+<h2>CHANGE YOUR DATA</h2>
+
+    <%= image_tag @darkside.url %>
+    | <%= link_to "Edit", edit_darkside_path(@darkside) %> | <%= link_to "Delete", @darkside, method: :delete, data: {confirm: "Are you sure you want to delete this darkside?"}  %>
+
+    <p><%=   @darkside.name %></p>
+    <%= link_to "Back", darksides_url %>
+
+    | <%= link_to "Edit", edit_darkside_path(@darkside) %> | <%= link_to "Delete", @darkside, method: :delete, data: {confirm: "Are you sure you want to delete this darkside?"}  %>

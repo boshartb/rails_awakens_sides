@@ -45,6 +45,7 @@ class DarksidesController < ApplicationController
     end
 
 
+
     private
     def darkside_params
       params.require(:darkside).permit( :name, :url)

@@ -1,14 +1,8 @@
 <h1>Edit Photo</h1>
 
-<p>
-  <%= link_to "Back", @lightside %>
-</p>
 
 <%= form_for @lightside do |f| %>
-  <!-- <p>
-    <%= f.label :source %><br>
-    <%= f.text_field :source %>
-  </p> -->
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -18,8 +12,10 @@
     <%= f.text_field :url %>
   </p>
   <p>
-    <%= f.submit "Update"%>
+    <div class="actions"><%= f.submit "Update", :class => "button" %></div>
   </p>
 <% end %>
 
-<%= link_to "Back", lightsides_url %>
+<p>
+  <%= link_to "Back", @lightside %>
+</p>

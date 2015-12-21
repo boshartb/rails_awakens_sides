@@ -5,13 +5,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <img src="http://cdn1-www.comingsoon.net/assets/uploads/gallery/star-wars-episode-vii-1398790440/starwarshorizontal.jpg" style="width:100%;">
+  <style>@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);</style>
 </head>
   <body>
+  <div>
+    <div style="width:100%; margin:0 auto;">
+      <img src="http://cdn1-www.comingsoon.net/assets/uploads/gallery/star-wars-episode-vii-1398790440/starwarshorizontal.jpg" style="width:100%;">
+      <%= yield %>
+      <h1>FORCE AWAKENS</h1>
 
-    <%= yield %>
-    <%= link_to "THE DARKSIDE < ------- ", "/darksides" %>
-    <%= link_to "-------  > THE LIGHTSIDE ", "/lightsides" %>
-
+          <%= link_to "DARKSIDE < -", "/darksides" %>
+          <%= link_to"THE STORY", "darksides/textcrawl" %>
+          <%= link_to "- >LIGHTSIDE ", "/lightsides" %>
+    </div>
   </body>
 </html>
