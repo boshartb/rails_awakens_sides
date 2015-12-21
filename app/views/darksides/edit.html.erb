@@ -1,0 +1,23 @@
+<h1>Edit Photo</h1>
+
+<p>
+  <%= link_to "Back", @darkside %>
+</p>
+
+<%= form_for @darkside do |f| %>
+  <!-- <p>
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </p> -->
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit "Update"%>
+  </p>
+<% end %>

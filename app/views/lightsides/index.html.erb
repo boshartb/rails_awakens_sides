@@ -1,0 +1,13 @@
+<h2>THE LIGHTSIDE</h2>
+
+<% @lightsides.each do |lightside| %>
+<%= link_to image_tag(lightside.url), "/lightsides/#{lightside.id}" %>
+  <p><%= lightside.name %></p>
+<% end %>
+
+<ul>
+  <%= link_to "ADD THE LIGHTSIDE", "/lightsides/new" %>
+  </br>
+  </br>
+  <%= link_to "HOME ", "/" %>
+</ul>

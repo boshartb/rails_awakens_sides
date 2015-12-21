@@ -1,0 +1,25 @@
+<h1>Edit Photo</h1>
+
+<p>
+  <%= link_to "Back", @lightside %>
+</p>
+
+<%= form_for @lightside do |f| %>
+  <!-- <p>
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </p> -->
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit "Update"%>
+  </p>
+<% end %>
+
+<%= link_to "Back", lightsides_url %>

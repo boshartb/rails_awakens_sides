@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails Awakens</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <img src="http://cdn1-www.comingsoon.net/assets/uploads/gallery/star-wars-episode-vii-1398790440/starwarshorizontal.jpg" style="width:100%;">
+</head>
+  <body>
+
+    <%= yield %>
+    <%= link_to "THE DARKSIDE < ------- ", "/darksides" %>
+    <%= link_to "-------  > THE LIGHTSIDE ", "/lightsides" %>
+
+  </body>
+</html>
